@@ -1,6 +1,6 @@
 const FilmImage = (props) => {
-  const {randomId} = props;
-  const {filmDb} = props;
+  const { randomId } = props;
+  const { filmDb } = props;
 
   return (
     <div>

@@ -16,8 +16,8 @@ function App() {
     },
     {
       id: 3,
-      title: "the fast and furious: tokyo drift",
-      img: "https://images.mubicdn.net/images/film/41368/cache-34957-1638464487/image-w1280.jpg?size=800x",
+      title: "john wick",
+      img: "https://m.media-amazon.com/images/M/MV5BMDE0ZjMzOTAtMzU2OS00ZDVmLWFlMjYtMThlOWYwMDBiN2E3XkEyXkFqcGdeQWFsZWxvZw@@._V1_QL75_UX500_CR0,0,500,281_.jpg",
     },
     {
       id: 4,
@@ -29,14 +29,32 @@ function App() {
       title: "shutter island",
       img: "https://a.ltrbxd.com/resized/sm/upload/db/pv/z7/q5/shutter-island-1200-1200-675-675-crop-000000.jpg?k=abd00136c6",
     },
+    {
+      id: 6,
+      title: "i am legend",
+      img: "https://www.denofgeek.com/wp-content/uploads/2021/03/I-am-Legend.jpeg",
+    },
+    {
+      id: 7,
+      title: "coach carter",
+      img: "https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABfsX5qsaqSSA6RGoIOZ9QUvwUP_4xHL4xUK5T--eFzoLZR-n4ncsXZZdvRgxHpKmQmuv4IGxzXpj7UnksXAOyOUz5E55.jpg?r=576",
+    },
   ];
+  let idArray = [];
 
-  let score = 0;
-
-  function randomNum(max) {
-    return Math.ceil(Math.random() * max);
+  function imageGenerator(maxLength) {
+    let randomId = Math.ceil(Math.random() * maxLength);
+    if (!idArray.includes(randomId) && idArray.length !== filmDb.length) {
+      idArray.push(randomId);
+      return randomId;
+    } else if (idArray.includes(randomId) && idArray.length !== filmDb.length) {
+      return imageGenerator(maxLength);
+    } else {
+      return randomId;
+    }
   }
-  const randomId = randomNum(filmDb.length);
+
+  const newImageId = imageGenerator(filmDb.length);
 
   return (
     <div className="App">
@@ -44,8 +62,8 @@ function App() {
         <h1>Filmable</h1>
       </header>
       <section>
-        <FilmImage randomId={randomId} filmDb={filmDb}></FilmImage>
-        <AnswerBox randomId={randomId} filmDb={filmDb}></AnswerBox>
+        <FilmImage randomId={newImageId} filmDb={filmDb}></FilmImage>
+        <AnswerBox randomId={newImageId} filmDb={filmDb}></AnswerBox>
       </section>
     </div>
   );
