@@ -31,7 +31,7 @@
 }
 
 #submit:hover {
-  border-color: black;
+  box-shadow: 5px 10px #888888;
 }
 
 input[type="text"] {
