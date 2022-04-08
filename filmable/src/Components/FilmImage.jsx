@@ -3,6 +3,7 @@ const FilmImage = (props) => {
     return Math.ceil(Math.random() * max);
   }
   const randomID = randomNum(props.filmDb.length);
+  const { filmDb } = props;
 
   return (
     <div>

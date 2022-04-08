@@ -30,6 +30,10 @@
   background-color: #350968;
 }
 
+#submit:hover {
+  border-color: black;
+}
+
 input[type="text"] {
   border: solid black;
   font-size: 40px;

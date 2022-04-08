@@ -1,10 +1,11 @@
 import { useState } from "react";
 
 //build input box
-const AnswerBox = (props) => {
+const AnswerBox = () => {
   const [guess, setGuess] = useState("");
 
   function handleSubmit(event) {
+    //do logic here
     console.log(guess);
     event.preventDefault();
   }
