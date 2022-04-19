@@ -26,7 +26,9 @@ const AnswerBox = (props) => {
     ) {
       setGuessMessage("CORRECT!");
       setGuessCount((currGuessCount) => currGuessCount + 1);
-      setShowButton(<button>Give me another Filmable!</button>);
+      setShowButton(
+        <button class="try-again">Give me another Filmable!</button>
+      );
     } else if (
       guess.toLocaleLowerCase() !== filmDb[filmIndex].title &&
       guessCount < 2
@@ -42,7 +44,7 @@ const AnswerBox = (props) => {
       setGuessCount((currGuessCount) => currGuessCount + 1);
       setGuess();
       setShowAnswer(<h2>The correct answer was: {filmTitle.toUpperCase()}</h2>);
-      setShowButton(<button>Give me another try!</button>);
+      setShowButton(<button class="try-again">Give me another try!</button>);
     }
   }
 

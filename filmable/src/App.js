@@ -39,6 +39,21 @@ function App() {
       title: "coach carter",
       img: "https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABfsX5qsaqSSA6RGoIOZ9QUvwUP_4xHL4xUK5T--eFzoLZR-n4ncsXZZdvRgxHpKmQmuv4IGxzXpj7UnksXAOyOUz5E55.jpg?r=576",
     },
+    {
+      id: 8,
+      title: "moana",
+      img: "https://d1nslcd7m2225b.cloudfront.net/Pictures/1024x536/2/1/1/1250211_Moana.jpg",
+    },
+    {
+      id: 9,
+      title: "brother bear",
+      img: "https://discourse.disneyheroesgame.com/uploads/default/original/3X/2/2/22a3937673804fbc8fb5499f09640fc772fa2a10.jpeg",
+    },
+    {
+      id: 10,
+      title: "finding dory",
+      img: "https://akns-images.eonline.com/eol_images/Entire_Site/2016830/rs_600x600-160930114035-600.finding-dory-1.9316.jpg?fit=around%7C1200:1200&output-quality=90&crop=1200:1200;center,top",
+    },
   ];
   let idArray = [];
 
