@@ -51,6 +51,7 @@ const AnswerBox = (props) => {
   return (
     <>
       <form onSubmit={handleSubmit}>
+        <h2>Guess Count: {guessCount}/3</h2>
         <input
           type="text"
           placeholder="Guess here!"
@@ -59,7 +60,7 @@ const AnswerBox = (props) => {
           required
         />
         <input id="submit" type="submit" value="Submit" />
-        <h2>Guess Count: {guessCount}/3</h2>
+
         <h2>{guessMessage}</h2>
       </form>
       <form>

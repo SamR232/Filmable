@@ -4,7 +4,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 10vh;
+  min-height: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,10 +45,10 @@ input[type="text"] {
 }
 
 img {
-  width: 60%;
-  height: 500px;
+  width: 35em;
+  height: 25em;
   border: 10px solid rgb(11, 1, 1);
-  margin: 15px;
+  margin: 5px;
 }
 
 .try-again {
