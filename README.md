@@ -8,7 +8,7 @@ p.s the movies aren't case sensitive so unfortunately if its incorrect you can't
 
 - Clone the repo on to your machine locally
 
-* In the terminal
+### In the terminal
 
 - Run yarn
 - Run yarn run start
@@ -19,4 +19,5 @@ p.s the movies aren't case sensitive so unfortunately if its incorrect you can't
 - Tidy up the App.js folder by removing the film array in to its own folder.
 - Introduce Typescript to the project to get correct typing and avoid errors.
 - Next would be to use an API to generate the image and movie titles, as currently these are an array of local images & titles which are then randomized.
-- The CSS could definitely do with an improvement to!
+- The CSS could definitely do with an improvement!
+- Deploy the site once I'm happy with everything 
