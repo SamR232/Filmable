@@ -10,7 +10,7 @@ p.s the movies aren't case sensitive so unfortunately if its incorrect you can't
 
 ### In the terminal
 
-- Run yarn
+- Run yarn (yarn install v1.22.15)
 - Run yarn run start
 - Good Luck!
 
